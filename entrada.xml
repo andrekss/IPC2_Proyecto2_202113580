@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <CONFIG>
+
  <listaElementos>
   <elemento>
    <numeroAtomico>[valorNumerico]</numeroAtomico>
@@ -7,6 +8,7 @@
    <nombreElemento>[valorAlfanumerico]</nombreElemento>
   </elemento>
  </listaElementos>
+
  <listaMaquinas>
   <Maquina>
    <nombre>[valorAlfanumerico]</nombre>
@@ -15,11 +17,12 @@
    <pin>
     <elementos>
      <elemento>[simboloDelElemento]</elemento>
- 
     </elementos>
    </pin>
   </Maquina>
  </listaMaquinas>
+
+
  <listaCompuestos>
   <compuesto>
    <nombre>[valorAlfanumerico]</nombre>
@@ -28,4 +31,6 @@
    </elementos>
   </compuesto>
  </listaCompuestos>
+
+
 </CONFIG>
