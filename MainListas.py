@@ -7,12 +7,11 @@ class Elemento:
       self.NombreE = NombreE
 
 class Maquina:
-   def __init__(self,nombre,NoPines,NoElementos,pin, listaElementos):
+   def __init__(self,nombre,NoPines,NoElementos,Listapin, listaElementos):
       self.nombre = nombre
       self.NoPines = NoPines
       self.NoElementos = NoElementos
-      self.pin = pin
-      self.listaElementos = listaElementos
+      self.Listapin = Listapin
 
 class Compuesto:
 
