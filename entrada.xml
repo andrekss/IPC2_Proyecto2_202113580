@@ -1,31 +1,79 @@
 <?xml version="1.0"?>
 <CONFIG>
  <listaElementos>
+
   <elemento>
-   <numeroAtomico>[valorNumerico]</numeroAtomico>
-   <simbolo>[valorAlfanumerico]</simbolo>
-   <nombreElemento>[valorAlfanumerico]</nombreElemento>
+   <numeroAtomico>1</numeroAtomico>
+   <simbolo>H</simbolo>
+   <nombreElemento>Hidrógeno</nombreElemento>
   </elemento>
+
+  <elemento>
+   <numeroAtomico>2</numeroAtomico>
+   <simbolo>He</simbolo>
+   <nombreElemento>Helio</nombreElemento>
+  </elemento>  
+
+  <elemento>
+   <numeroAtomico>3</numeroAtomico>
+   <simbolo>Li</simbolo>
+   <nombreElemento>Litio</nombreElemento>
+  </elemento>  
+
  </listaElementos>
+
+ 
  <listaMaquinas>
+
   <Maquina>
-   <nombre>[valorAlfanumerico]</nombre>
-   <numeroPines>[valorNumerico]</numeroPines>
-   <numeroElementos>[valorNumerico]</numeroElementos>
+   <nombre>Maquina Potente</nombre>
+   <numeroPines>3</numeroPines>
+   <numeroElementos>3</numeroElementos>
    <pin>
     <elementos>
-     <elemento>[simboloDelElemento]</elemento>
- 
+     <elemento>Li</elemento>
     </elementos>
    </pin>
   </Maquina>
+
+  <Maquina>
+   <nombre>Maquina Potente2</nombre>
+   <numeroPines>2</numeroPines>
+   <numeroElementos>2</numeroElementos>
+   <pin>
+    <elementos>
+     <elemento>H</elemento>
+     <elemento>Li</elemento>
+    </elementos>
+   </pin>
+  </Maquina>  
+
  </listaMaquinas>
+
+
  <listaCompuestos>
+
   <compuesto>
-   <nombre>[valorAlfanumerico]</nombre>
+ 
+   <nombre>caca</nombre>
+ 
    <elementos>
-    <elemento>[simboloDelElemento]</elemento>
+    <elemento>Li</elemento>
+    <elemento>He</elemento>
    </elementos>
+ 
   </compuesto>
+
+  <compuesto>
+ 
+   <nombre>hilea</nombre>
+ 
+   <elementos>
+    <elemento>He</elemento>
+    <elemento>H</elemento>
+   </elementos>
+ 
+  </compuesto>  
+ 
  </listaCompuestos>
 </CONFIG>
