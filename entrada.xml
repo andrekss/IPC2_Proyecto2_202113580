@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <CONFIG>
+ 
  <listaElementos>
 
   <elemento>
@@ -18,35 +19,67 @@
    <numeroAtomico>3</numeroAtomico>
    <simbolo>Li</simbolo>
    <nombreElemento>Litio</nombreElemento>
+  </elemento> 
+
+  <elemento>
+   <numeroAtomico>4</numeroAtomico>
+   <simbolo>Be</simbolo>
+   <nombreElemento>Berilio</nombreElemento>
+  </elemento>   
+
+  <elemento>
+   <numeroAtomico>5</numeroAtomico>
+   <simbolo>B</simbolo>
+   <nombreElemento>Boro</nombreElemento>
   </elemento>  
 
- </listaElementos>
+  <elemento>
+   <numeroAtomico>6</numeroAtomico>
+   <simbolo>C</simbolo>
+   <nombreElemento>Carbono</nombreElemento>
+  </elemento> 
+  
+  <elemento>
+   <numeroAtomico>7</numeroAtomico>
+   <simbolo>N</simbolo>
+   <nombreElemento>Nitrógeno</nombreElemento>
+  </elemento> 
 
+ </listaElementos>
  
  <listaMaquinas>
 
   <Maquina>
    <nombre>Maquina Potente</nombre>
-   <numeroPines>3</numeroPines>
+   <numeroPines>2</numeroPines>
    <numeroElementos>3</numeroElementos>
    <pin>
     <elementos>
      <elemento>Li</elemento>
+     <elemento>He</elemento>
+     <elemento>N</elemento>
     </elementos>
    </pin>
-  </Maquina>
 
-  <Maquina>
-   <nombre>Maquina Potente2</nombre>
-   <numeroPines>2</numeroPines>
-   <numeroElementos>2</numeroElementos>
    <pin>
     <elementos>
+     <elemento>C</elemento>
+     <elemento>Be</elemento>
      <elemento>H</elemento>
-     <elemento>Li</elemento>
     </elementos>
-   </pin>
+   </pin>   
   </Maquina>  
+
+  <Maquina>
+   <nombre>Maquina Potente 2</nombre>
+   <numeroPines>2</numeroPines>
+   <numeroElementos>3</numeroElementos>
+   <pin>
+    <elementos>
+     <elemento>B</elemento>
+    </elementos> 
+   </pin>
+  </Maquina>     
 
  </listaMaquinas>
 
@@ -55,25 +88,19 @@
 
   <compuesto>
  
-   <nombre>caca</nombre>
+   <nombre>carcalio</nombre>
  
    <elementos>
     <elemento>Li</elemento>
+    <elemento>Li</elemento>
+    <elemento>Be</elemento>
     <elemento>He</elemento>
+    <elemento>Be</elemento>
+    <elemento>Li</elemento>
    </elementos>
  
   </compuesto>
-
-  <compuesto>
- 
-   <nombre>hilea</nombre>
- 
-   <elementos>
-    <elemento>He</elemento>
-    <elemento>H</elemento>
-   </elementos>
- 
-  </compuesto>  
  
  </listaCompuestos>
+
 </CONFIG>

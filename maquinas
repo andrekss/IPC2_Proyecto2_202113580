@@ -1,0 +1,79 @@
+// Maquinas
+digraph {
+	0 [label="Nombre: Maquina Potente
+Número de pines: 2
+Número de elementos: 3" fillcolor=skyblue height=0.1 shape=box style=filled width=0.1]
+	"0,0" [label="-" fillcolor=gray height=0.1 shape=circle style=filled width=0.1]
+	"0,0,0" [label="3                                  
+
+
+
+Li
+
+
+
+Litio" fillcolor="#0D86E9" height=0.1 shape=square style=filled width=0.1]
+	"0,0,1" [label="2                                  
+
+
+
+He
+
+
+
+Helio" fillcolor="#F308C1" height=0.1 shape=square style=filled width=0.1]
+	"0,0,2" [label="7                                  
+
+
+
+N
+
+
+
+Nitrógeno" fillcolor="#F69CAA" height=0.1 shape=square style=filled width=0.1]
+	"0,1" [label="-" fillcolor=gray height=0.1 shape=circle style=filled width=0.1]
+	"0,1,0" [label="6                                  
+
+
+
+C
+
+
+
+Carbono" fillcolor="#5E77C2" height=0.1 shape=square style=filled width=0.1]
+	"0,0,0" -> "0,1,0" [style=invis]
+	"0,0" -> "0,1" [style=invis]
+	"0,1,1" [label="4                                  
+
+
+
+Be
+
+
+
+Berilio" fillcolor="#40A71E" height=0.1 shape=square style=filled width=0.1]
+	"0,0,1" -> "0,1,1" [style=invis]
+	"0,1,2" [label="1                                  
+
+
+
+H
+
+
+
+Hidrógeno" fillcolor="#F220D2" height=0.1 shape=square style=filled width=0.1]
+	"0,0,2" -> "0,1,2" [style=invis]
+	1 [label="Nombre: Maquina Potente 2
+Número de pines: 2
+Número de elementos: 3" fillcolor=skyblue height=0.1 shape=box style=filled width=0.1]
+	"1,0" [label="-" fillcolor=gray height=0.1 shape=circle style=filled width=0.1]
+	"1,0,0" [label="5                                  
+
+
+
+B
+
+
+
+Boro" fillcolor="#C9A051" height=0.1 shape=square style=filled width=0.1]
+}

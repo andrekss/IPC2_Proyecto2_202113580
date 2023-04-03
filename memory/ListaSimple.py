@@ -1,4 +1,4 @@
-from nodo import *
+from memory.nodo import *
 
 class ListaSimple:
     IdIncrementable = -1
@@ -17,7 +17,7 @@ class ListaSimple:
            self.cabeza.setDirection(newNodo)
            self.cabeza = newNodo 
        self.validación = False
-    """
+
     def EliminarCabeza(self):
         newNodo = self.cola
         while newNodo.getDirection() != self.cabeza: #irá cambiando entre nodos hasta que newNodo sea igual a cabeza
@@ -25,7 +25,8 @@ class ListaSimple:
       #  print(newNodo.getDato())   necesario para testear, será el dato anterior a la cabeza
         newNodo.setDirection(None)
         self.cabeza  = newNodo 
-        self.IdIncrementable-=1"""
+        self.IdIncrementable-=1
+        
     """
     def recorrido (self):    
         newNod = self.cola
@@ -40,6 +41,7 @@ class ListaSimple:
             return newNodo.getDato()
         newNodo = newNodo.getDirection()
      return None # si se cumple el cliclo y no encontró nada, entonces no retornará nada
+   
     """
     def Modificar(self, idBuscar,newDato):
      newNodo = self.cola

@@ -1,4 +1,4 @@
-from ListaSimple import *
+from memory.ListaSimple import *
 
 class Elemento:
    def __init__(self, NoAtomico, simbolo, NombreE ):
@@ -7,7 +7,7 @@ class Elemento:
       self.NombreE = NombreE
 
 class Maquina:
-   def __init__(self,nombre,NoPines,NoElementos,Listapin, listaElementos):
+   def __init__(self,nombre,NoPines,NoElementos,Listapin):
       self.nombre = nombre
       self.NoPines = NoPines
       self.NoElementos = NoElementos
