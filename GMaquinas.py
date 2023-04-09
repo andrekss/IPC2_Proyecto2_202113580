@@ -1,5 +1,5 @@
 from graphviz import *
-from opciones import *
+from memory.ListaSimple import *
 import random
 from memory.Colas import *
 
@@ -9,7 +9,6 @@ class Graficar:
          self.dot = Digraph(comment='Maquinas', format='pdf')
          self.listaMaqs = listaMaqs
          self.listaElement = listaElement
-         self.colores = ListaSimple()
          self.Elementos = Elementos
          self.Colores = cola()
 

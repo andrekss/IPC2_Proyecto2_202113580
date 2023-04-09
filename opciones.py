@@ -2,6 +2,8 @@ from tkinter import *
 from CargarXml import *
 from tkinter import ttk
 from GMaquinas import Graficar
+from AnalisisCompuesto import *
+import os
 
 class Opciones:
 
@@ -18,6 +20,7 @@ class Opciones:
         self.altoV = altoV
         self.nombre = nombre
         self.car = Cargar()
+        self.analisis = Analizar(self.car.ListaMaquinas,self.car.ListaCompuestos,'yellow','box')
         
 
     def generarTablaElementos(self,ventana):
@@ -52,9 +55,10 @@ class Opciones:
          Save = Button(ventana, text='Añadir')
          Save.config(font=("Arial",13),width=self.ancho,height=self.alto,command=lambda: self.car.AñadirElemento(NoAtomic,Símbolo,nombre))
          Save.place(x=self.centrado-x,y=self.inicial*(y+0.3))
-        
+      
          for i in range(self.car.ListaElementos.tamaño()):
-          ElementosQ.insert("", "end", text="1", values=(self.car.ListaElementos.invocar(i).NoAtomico, f'{self.car.ListaElementos.invocar(i).simbolo}', f'{self.car.ListaElementos.invocar(i).NombreE}'))
+            ElementosQ.insert("", "end", text="1", values=(self.car.ListaElementos.invocar(i).NoAtomico, f'{self.car.ListaElementos.invocar(i).simbolo}', f'{self.car.ListaElementos.invocar(i).NombreE}'))
+       
          ElementosQ.pack() 
         except:
          messagebox.showinfo("Información","No Hay elementos")     
@@ -83,9 +87,9 @@ class Opciones:
 
        Maq = Entry(ventana, width=self.ancho)
        Maq.place(x=self.centrado-x+self.ancho+105,y=self.inicial*y)       
-
+       
        guardar = Button(ventana, text='Analizar Compuesto')
-       guardar.config(font=("Arial",13),width=self.ancho,height=self.alto)
+       guardar.config(font=("Arial",13),width=self.ancho,height=self.alto,command=lambda: self.analisis.Analisis(Maq,Comp))
        guardar.place(x=self.centrado-x,y=self.inicial*(y+0.3))
 
        for i in range(self.car.ListaCompuestos.tamaño()): 
@@ -154,4 +158,13 @@ class Opciones:
 
     def Eliminar(self):
        self.car.LimpiarMemoria()  
-           
+
+    def Generar(self):
+     try: 
+      self.analisis.EscribirTiemposC()  
+     except:
+        messagebox.showinfo("Información","No hay datos ó\ndebe borrar el archivo antiguo")    
+    
+    def AbrirEnsayo(self):
+      RutaAbsoluta = os.path.abspath("Documentación/Ensayo.pdf")
+      os.startfile(RutaAbsoluta)              

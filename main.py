@@ -1,7 +1,6 @@
 from tkinter import *
 import sys
 from opciones import *
-from GMaquinas import *
 
 op = Opciones(440,30,150,70,20,2,500,650,'red','Proyecto 2')
 
@@ -22,7 +21,7 @@ archivo = Button(selector, text="Cargar Archivo XML",command=op.GenerarRuta)
 archivo.config(font=("Arial",13),width=op.ancho,height=op.alto)
 
 archivoG = Button(selector, text="Generar Archivo XML")
-archivoG.config(font=("Arial",13),width=op.ancho,height=op.alto)
+archivoG.config(font=("Arial",13),width=op.ancho,height=op.alto,command=op.Generar)
 
 GElementos = Button(selector, text="Gestión de Elementos")
 GElementos.config(font=("Arial",13),width=op.ancho,height=op.alto,command=op.Elementos)
@@ -34,7 +33,7 @@ GMaquinas = Button(selector, text="Gestión de Maquinas")
 GMaquinas.config(font=("Arial",13),width=op.ancho,height=op.alto,command=op.GraficarMáquina)
 
 Ayuda = Button(selector, text="Ayuda")
-Ayuda.config(font=("Arial",13),width=op.ancho,height=op.alto)
+Ayuda.config(font=("Arial",13),width=op.ancho,height=op.alto,command=op.AbrirEnsayo)
 
 salir = Button(selector, text="Salir")
 salir.config(font=("Arial",13),width=op.ancho,height=op.alto,command=sys.exit) 

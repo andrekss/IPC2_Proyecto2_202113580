@@ -65,8 +65,8 @@ class Cargar:
               self.ListaElementosC.AgregarCabeza(Eleme)
             comp = Compuesto(nombreC,self.ListaElementosC)
             self.ListaCompuestos.AgregarCabeza(comp)  
-         contador +=1       
-        
+         contador +=1 
+
       #ordenar elementos por numero atómico
       self.Imprimir(True,True,True)    
      except: # si ocurre algún error lo avisará

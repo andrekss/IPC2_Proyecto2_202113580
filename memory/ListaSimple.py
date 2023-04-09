@@ -42,15 +42,16 @@ class ListaSimple:
         newNodo = newNodo.getDirection()
      return None # si se cumple el cliclo y no encontró nada, entonces no retornará nada
    
-    """
+    
     def Modificar(self, idBuscar,newDato):
      newNodo = self.cola
      while newNodo != None:
         if newNodo.getId() == idBuscar:
             return newNodo.setDato(newDato)
         newNodo = newNodo.getDirection()
-     return None # si se cumple el cliclo y no encontró nada, entonces no retornará nada"""
+     return None # si se cumple el cliclo y no encontró nada, entonces no retornará nada
 
     def tamaño(self):
         return self.cabeza.getId()+1
+    
         
